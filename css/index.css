@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -47,14 +48,17 @@ table {
 	border-spacing: 0;
 }
 
+/*General styling*/
+
 * {
     box-sizing: border-box;
     max-width: 100%;
 }
-  /* .hclass{
-    display: flex;
-    justify-content: space-evenly;
-}   */
+.about{
+    padding-bottom: 4.5%;
+    padding-top: 3%;
+    border-bottom: 1px dashed black;
+}
 .hclass img{
     padding-left: 34.5%;
     padding-top: 1%;
@@ -82,27 +86,22 @@ table {
     justify-content: center;
     padding: 0.5% 0;
 }
-
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
-
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
-
 p {
     line-height: 1.4;
 }
-
 .container {
     width: 800px;
     margin: 0 auto;
 }
-
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -111,29 +110,24 @@ p {
     margin-top: 20px;
     border-bottom: 1px dashed black;
 }
-
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
-
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
 .middle-content h2{
     padding: 0 2%;
     margin-bottom: 0;
 }
-
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 .middle-content .boxes .teal{
     width: 12.5%;
     height: 100px;
@@ -234,27 +228,21 @@ p {
     align-items: center;
     justify-content: center;
 }
-
-
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
-
 .bottom-content .text-container {
     padding-right: 4%;
 }
-
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
 footer {
     width: 100%;
     background: black;
 }
-
 footer nav {
     width: 60%;
     display: flex;
@@ -263,13 +251,15 @@ footer nav {
     padding: 20px 2%;
     font-size: 14px;
 }
-
 footer nav a {
     color: white;
     text-decoration: none;
-}
+} 
+
+/*First section styling*/ 
+
 .first-section{
-    display: flex;
+    display: flex; /*used flexbox property as it allows elements to align and distribute space*/
     justify-content: space-between;
     padding-bottom:5%;
     padding-top: 4%;
@@ -301,6 +291,9 @@ footer nav a {
 .first-right h3{
     margin: 2% 0;
 }
+
+/*Second section styling*/
+
 .second-left{
     border-bottom: 1px dashed black;
     margin-right: 5%;
@@ -328,22 +321,14 @@ footer nav a {
 .second-right h3{
     margin: 2% 0;
 }
-
-
-
 .second-section{
     display: flex;
     justify-content: space-between;
-    padding-bottom:7%;
-    padding-top: 3%;
+    padding-bottom:5%;
+    padding-top: 1%;
 }
 
-
-.about{
-    padding-bottom: 4.5%;
-    padding-top: 3%;
-    border-bottom: 1px dashed black;
-}
+/*Last section styling*/
 .last-section{
     padding-bottom: 5%;
 }
